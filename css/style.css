@@ -509,6 +509,11 @@ template {
   max-width: 280px;
   max-height: 70px;
 }
-.container .logo {
+
+.navbar-top {
+  max-height: 70px;
+}
+
+.logo {
   width: 99px;
 }/*# sourceMappingURL=style.css.map */
