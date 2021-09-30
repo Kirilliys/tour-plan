@@ -481,7 +481,6 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
   }
 
   .navbar__search, .navbar-menu, .navbar__user {
@@ -506,8 +505,10 @@ template {
     background-color: #333333;
   }
 }
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
+.container {
+  max-width: 280px;
+  max-height: 70px;
+}
+.container .logo {
+  width: 99px;
 }/*# sourceMappingURL=style.css.map */
