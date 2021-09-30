@@ -480,7 +480,7 @@ template {
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 88%;
   }
 
   .navbar__search, .navbar-menu, .navbar__user {
@@ -505,15 +505,17 @@ template {
     background-color: #333333;
   }
 }
-.container {
-  max-width: 280px;
-  max-height: 70px;
-}
+@media (max-width: 580px) {
+  .container {
+    width: 88%;
+  }
 
-.navbar-top {
-  max-height: 70px;
-}
+  .navbar-top {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
-.logo {
-  width: 99px;
+  .logo {
+    width: 99px;
+  }
 }/*# sourceMappingURL=style.css.map */
