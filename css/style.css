@@ -501,6 +501,7 @@ template {
 
 .stars {
   flex-basis: 100%;
+  min-height: 8px;
 }
 
 .offer {
@@ -595,6 +596,11 @@ template {
     flex-basis: auto;
   }
 
+  .hotel {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
   .hotel-name {
     flex-basis: 100%;
   }
@@ -610,6 +616,7 @@ template {
   .hotel-info__offer {
     order: -1;
     margin: 0;
+    margin-top: 5px;
   }
   .hotel-info__rating {
     display: none;
