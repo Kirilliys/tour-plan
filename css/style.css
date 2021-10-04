@@ -502,6 +502,7 @@ template {
 
 .stars {
   flex-basis: 100%;
+  line-height: 5px;
 }
 
 .offer {
