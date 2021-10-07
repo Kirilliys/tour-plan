@@ -13,6 +13,10 @@ const swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   speed: 1000,
   
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   
 });
 
