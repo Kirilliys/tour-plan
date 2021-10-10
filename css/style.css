@@ -747,7 +747,6 @@ template {
   border: none;
   background-color: #ec1f46;
   color: #fff;
-  min-width: 65px;
   padding: 20px 18px;
 }
 
@@ -935,6 +934,9 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
   }
 }
 @media (max-width: 768px) {
