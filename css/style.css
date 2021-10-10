@@ -490,6 +490,31 @@ template {
   margin-top: 4px;
   margin-bottom: 0;
 }
+.hotel-slider {
+  max-width: 728px;
+  height: 450px;
+}
+.hotel-slider__button {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
 .hotel-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -563,32 +588,6 @@ template {
   left: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-}
-
-.slider {
-  max-width: 728px;
-  height: 450px;
-}
-.slider-button {
-  position: absolute;
-  z-index: 99;
-  top: 50%;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-}
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
 }
 
 .booking {
@@ -676,7 +675,7 @@ template {
   color: #fff;
 }
 
-#map {
+.map {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -922,8 +921,18 @@ template {
     height: 250px;
   }
 
+  .swiper {
+    max-height: 179px;
+  }
+
+  .hotel {
+    padding: 0;
+  }
   .hotel-slider {
     margin-bottom: 20px;
+  }
+  .hotel-right {
+    min-height: 402px;
   }
 
   .newsletter {
@@ -938,5 +947,9 @@ template {
 
   .subscribe {
     width: 100%;
+  }
+
+  .map {
+    max-height: 172px;
   }
 }/*# sourceMappingURL=style.css.map */

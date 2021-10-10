@@ -17,6 +17,28 @@
     &__name
       margin-top: 4px
       margin-bottom: 0
+  &-slider
+    max-width: 728px
+    height: 450px
+    &__button
+      position: absolute
+      z-index: 99
+      top: 50%
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      &--prev
+        left: 18px
+        background-image: url(../img/arrow-prev.svg)
+      &--next
+        right: 18px
+        background-image: url(../img/arrow-next.svg)
+
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -78,27 +100,7 @@
     left: 0
     right: 0
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-.slider
-  max-width: 728px
-  height: 450px
-  &-button
-    position: absolute
-    z-index: 99
-    top: 50%
-    width: 30px
-    height: 30px
-    border: none
-    cursor: pointer
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 10px
-    background-color: transparent
-    &--next
-      right: 18px
-      background-image: url(../img/arrow-next.svg)
-    &--prev
-      left: 18px
-      background-image: url(../img/arrow-prev.svg)
+
 .booking
   background-color: $dark
   color: $light
@@ -169,7 +171,7 @@
     padding: 0
     background-color: $primary
     color: $light
-#map
+.map
   width: 347px
   height: 213px
   border-radius: 10px
