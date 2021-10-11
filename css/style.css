@@ -919,7 +919,7 @@ template {
     width: 340px;
   }
 
-  #map {
+  .map {
     width: 340px;
   }
 
@@ -1007,7 +1007,7 @@ template {
     width: 100%;
   }
 
-  #map {
+  .map {
     width: 100%;
   }
 
