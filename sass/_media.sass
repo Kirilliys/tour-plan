@@ -10,6 +10,9 @@
         object-fit: cover
   .reviews
     background-color: $secondary
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -52,6 +55,14 @@
         max-width: 580px
         &::after, &::before
           display: none
+  .activites
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
 
 @media (max-width: 768px)
   .container
@@ -145,6 +156,9 @@
           right: 50%
           margin-right: -65px
           transform: translate(50%,0)
+  .card
+    width: 48%
+    height: 255px
 
 @media (max-width: 580px)
   .container
@@ -201,3 +215,16 @@
           right: 40%
       &__text
         margin: 0
+
+  .activites
+    padding: 40px 0 60px 0
+    &__title
+      margin-bottom: 36px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+  .card
+    width: 100%
+    height: 255px
