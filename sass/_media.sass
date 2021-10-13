@@ -63,6 +63,13 @@
   .card
     width: 339px
     height: 255px
+  .reviews
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+  .reviews
+    padding-bottom: 60px
 
 @media (max-width: 768px)
   .container
@@ -136,11 +143,7 @@
         font-size: 36px
         line-height: 45px
         text-transform: uppercase
-  .reviews
-    &__title
-      font-weight: bold
-      font-size: 30px
-      line-height: 38px
+
     &-slider
       &__item
         padding: 0 30px 30px
@@ -200,21 +203,29 @@
   .map
     max-height: 172px
   .reviews
+    padding-bottom: 50px
     &__title
       font-weight: bold
       font-size: 18px
       line-height: 23px
       text-align: center
       text-transform: uppercase
+      margin-bottom: 42px
 
     &-slider
       &__button
+        top: 32px
         &--prev
           left: 40%
+          margin-left: -65px
+          transform: translate(-50%,0)
         &--next
           right: 40%
+          margin-right: -65px
+          transform: translate(50%,0)
       &__text
         margin: 0
+        text-align: left
 
   .activites
     padding: 40px 0 60px 0
