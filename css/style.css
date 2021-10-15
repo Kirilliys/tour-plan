@@ -1082,6 +1082,10 @@ template {
 }
 .price__button {
   padding: 11px 27px 10px 26px;
+  max-width: 120px;
+  min-width: 120px;
+  white-space: nowrap;
+  line-height: 40px;
   max-height: 40px;
   border: none;
   grid-area: button;
@@ -1203,7 +1207,7 @@ template {
   }
 
   .other-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
@@ -1328,13 +1332,17 @@ template {
 
   .other-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 40% 40%;
   }
   .other__item {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 250px;
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .other__mini {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 260px;
   }
   .other__about {
     padding: 25px 21px 29px 32px;
@@ -1464,14 +1472,24 @@ template {
     height: 255px;
   }
 
-  .other-grid {
-    grid-template-columns: 1fr repeat(auto-fill);
-  }
   .other__mini {
+    grid-template-rows: 250px 300px;
     grid-column-start: 1;
     grid-column-end: 3;
   }
   .other__item {
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 1fr;
+  }
+  .other__title {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .other__room--mini {
+    margin-bottom: 40px;
+  }
+  .other__heading--mini {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
