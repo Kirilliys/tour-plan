@@ -996,7 +996,7 @@ template {
   overflow: hidden;
 }
 .other__about--mini {
-  padding: 30px 21px 25px 32px;
+  padding: 28px 21px 25px 32px;
   border-radius: 0px 0px 8px 8px;
 }
 .other__new {
@@ -1019,7 +1019,7 @@ template {
   font-size: 14px;
   line-height: 160.6%;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 49px;
   grid-area: text;
 }
 .other-stars {
@@ -1120,6 +1120,10 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+
+  .other__text {
+    margin-bottom: 31px;
   }
 }
 @media (max-width: 992px) {
@@ -1332,7 +1336,7 @@ template {
 
   .other-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   .other__item {
     grid-template-columns: 1fr;
@@ -1473,7 +1477,7 @@ template {
   }
 
   .other__mini {
-    grid-template-rows: 250px 300px;
+    grid-template-rows: 250px 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
   }
