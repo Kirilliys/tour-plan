@@ -1026,6 +1026,9 @@ template {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
+.footer__form {
+  color: #BDBDBD;
+}
 .footer__message {
   background-color: #fff;
   border-radius: 4px;
@@ -1033,6 +1036,7 @@ template {
   border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
 }
 .footer__button {
   min-width: 160px;
