@@ -1060,7 +1060,7 @@ template {
 
 .price {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 18px 40px;
   grid-template-areas: "old ." "new button";
   align-items: center;
@@ -1336,17 +1336,15 @@ template {
 
   .other-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
   .other__item {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 250px 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
   }
   .other__mini {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 260px;
   }
   .other__about {
     padding: 25px 21px 29px 32px;
