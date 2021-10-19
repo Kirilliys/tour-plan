@@ -1424,6 +1424,18 @@ template {
   .activites {
     padding: 40px 0 60px 0;
   }
+  .activites__card--corner {
+    order: 0;
+  }
+  .activites__card--gym {
+    order: 2;
+  }
+  .activites__card--tamarind {
+    order: 1;
+  }
+  .activites__card--discovery {
+    order: 3;
+  }
   .activites__title {
     margin-bottom: 36px;
     font-style: normal;
