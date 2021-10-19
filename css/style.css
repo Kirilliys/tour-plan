@@ -953,6 +953,9 @@ template {
 .footer__categories {
   grid-row: 1/4;
 }
+.footer__legal {
+  margin-left: 52px;
+}
 .footer__social-list {
   display: flex;
   align-items: center;
@@ -961,7 +964,7 @@ template {
 }
 .footer__social-network {
   display: flex;
-  align-content: center;
+  align-item: center;
   grid-row: 2/4;
   grid-column: span 2;
 }
@@ -1026,9 +1029,6 @@ template {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
-.footer__form {
-  color: #BDBDBD;
-}
 .footer__message {
   background-color: #fff;
   border-radius: 4px;
@@ -1055,7 +1055,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
