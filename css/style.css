@@ -974,6 +974,11 @@ template {
 .footer__contact-form {
   grid-column: span 2;
 }
+.footer__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
 .footer__form {
   display: flex;
   align-items: center;
@@ -1033,6 +1038,9 @@ template {
   height: 50px;
   margin-bottom: 15px;
   flex-basis: 48%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 .footer__message {
   background-color: #fff;
@@ -1042,6 +1050,10 @@ template {
   flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  height: 123px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 .footer__button {
   min-width: 160px;
@@ -1202,9 +1214,14 @@ template {
     padding-bottom: 60px;
   }
 
+  .footer__logo {
+    width: 104px;
+    min-height: 120px;
+  }
   .footer-wrapper {
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: 35px;
+    grid-gap: 38px;
   }
   .footer__input {
     flex-basis: 49%;
@@ -1213,27 +1230,36 @@ template {
     grid-row: 1/2;
     grid-column: span 2;
   }
+  .footer__title {
+    white-space: nowrap;
+  }
+  .footer__title--inline {
+    margin-right: 41px;
+  }
   .footer__social-network {
     grid-row: 1/2;
     grid-column: span 4;
     align-self: center;
+    position: relative;
+    right: 20px;
   }
   .footer__categories {
     grid-row: 2/3;
     grid-column: span 2;
   }
   .footer__legal {
-    grid-column: span 2;
+    margin: 0;
+    grid-column: 6/8;
   }
   .footer__additional {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   .footer__contact-datails {
     grid-column: span 5;
     grid-row: 3;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    grid-column: span 6;
     grid-row: 4;
   }
   .footer__down {
