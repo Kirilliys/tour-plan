@@ -75,11 +75,11 @@
   .reviews
     padding-bottom: 60px
   .footer
-    &__logo
-      width: 104px
-      min-height: 120px
+    padding-top: 73px
+    padding-bottom: 33px
+
     &-wrapper
-      grid-template-columns: repeat(8, 1fr)
+      grid-template-columns: repeat(8,1fr)
       grid-row-gap: 35px
       grid-gap: 38px
     &__input
@@ -87,6 +87,8 @@
     &__logo
       grid-row: 1/2
       grid-column: span 2
+      width: 104px
+      min-height: 120px
     &__title
       white-space: nowrap
       &--inline
@@ -102,18 +104,20 @@
     &__categories
       grid-row: 2/3
       grid-column: span 2
+      width: 162px
     &__legal
       margin: 0
       grid-column: 6/ 8
+      width: 202px
     &__additional
       grid-column: span 3
+      width: 260px
     &__contact
       &-datails
-        grid-column: span 5
+        grid-column: span 8
         grid-row: 3
       &-form
-        grid-column: span 6
-        grid-row: 4
+        width: 539px
 
     &__down
       margin-top: 56px
@@ -345,6 +349,7 @@
       &-network
         grid-row: 2
         grid-column: 1
+        right: 0
     &__additional
       grid-row: 3
       grid-column: 1
@@ -362,10 +367,16 @@
       &-form
         grid-row: 7
         grid-column: 1
+        width: 281px
+
     &__down
       grid-template-rows: 1fr 1fr
       grid-row-gap: 10px
       margin-top: 30px
+      &-ul
+        grid-column: span 10
+      &-item
+        margin-right: 7px
     &__firms
       grid-column: 1 /8
       grid-row: 2

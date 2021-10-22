@@ -1058,6 +1058,15 @@ template {
   font-size: 12px;
   line-height: 15px;
 }
+.footer__call {
+  display: block;
+  text-decoration: none;
+  color: #BDBDBD;
+}
+.footer__mail {
+  text-decoration: none;
+  color: #BDBDBD;
+}
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1217,9 +1226,9 @@ template {
     padding-bottom: 60px;
   }
 
-  .footer__logo {
-    width: 104px;
-    min-height: 120px;
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
   }
   .footer-wrapper {
     grid-template-columns: repeat(8, 1fr);
@@ -1232,6 +1241,8 @@ template {
   .footer__logo {
     grid-row: 1/2;
     grid-column: span 2;
+    width: 104px;
+    min-height: 120px;
   }
   .footer__title {
     white-space: nowrap;
@@ -1249,21 +1260,23 @@ template {
   .footer__categories {
     grid-row: 2/3;
     grid-column: span 2;
+    width: 162px;
   }
   .footer__legal {
     margin: 0;
     grid-column: 6/8;
+    width: 202px;
   }
   .footer__additional {
     grid-column: span 3;
+    width: 260px;
   }
   .footer__contact-datails {
-    grid-column: span 5;
+    grid-column: span 8;
     grid-row: 3;
   }
   .footer__contact-form {
-    grid-column: span 6;
-    grid-row: 4;
+    width: 539px;
   }
   .footer__down {
     margin-top: 56px;
@@ -1558,6 +1571,7 @@ template {
   .footer__social-network {
     grid-row: 2;
     grid-column: 1;
+    right: 0;
   }
   .footer__additional {
     grid-row: 3;
@@ -1579,11 +1593,18 @@ template {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+    width: 281px;
   }
   .footer__down {
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 10px;
     margin-top: 30px;
+  }
+  .footer__down-ul {
+    grid-column: span 10;
+  }
+  .footer__down-item {
+    margin-right: 7px;
   }
   .footer__firms {
     grid-column: 1/8;
