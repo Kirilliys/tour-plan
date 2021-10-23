@@ -342,11 +342,16 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      grid-row-gap: 30px
     &__logo
       grid-row: 1
       grid-column: 1
     &__social
+      &-list
+        width: 85px
       &-network
+        display: grid
+        grid-template-rows: 43px
         grid-row: 2
         grid-column: 1
         right: 0
@@ -368,6 +373,14 @@
         grid-row: 7
         grid-column: 1
         width: 281px
+    &__send
+      display: grid
+      grid-template-columns: 1fr
+      grid-row-gap: 15px
+    &__info
+      grid-row: 1
+    &__button
+      grid-row: 2
 
     &__down
       grid-template-rows: 1fr 1fr
