@@ -1627,4 +1627,15 @@ template {
     grid-column: 1/8;
     grid-row: 2;
   }
+
+  .navbar-menu {
+    overflow-y: auto;
+    height: 90vh;
+  }
+  .navbar-menu__item--mobile--visible {
+    margin-bottom: 39px;
+  }
+  .navbar-menu__item--mobile--visible--user {
+    margin-bottom: 27px;
+  }
 }/*# sourceMappingURL=style.css.map */
