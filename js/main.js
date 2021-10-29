@@ -61,9 +61,16 @@ menuButton.addEventListener("click",function () {
  }
 
 $(this).keydown(function(eventObject){
-       if (eventObject.which == 27)
-       $('.modal__dialog, .modal__overlay').hide();
+       if (eventObject.which == 27) {
+        $('.modal__dialog').removeClass('modal__dialog--visible');
+        $('.modal__overlay').removeClass('modal__overlay--visible');
+      }
+
+     
   })
+
+//Обработка формы
+ $(".modal__form").validate();
 
 
 });

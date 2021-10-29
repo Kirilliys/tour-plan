@@ -84,11 +84,7 @@
       grid-row-gap: 49px
     &__input
       flex-basis: 48%
-    &__logo
-      grid-row: 1/2
-      grid-column: span 1
-      width: 104px
-      min-height: 120px
+
     &__title
       white-space: nowrap
       &--inline
@@ -135,8 +131,16 @@
       width: 160px
       align-items: stretch
     &__info
-      margin-bottom: 5px
-
+      margin-bottom: 8px
+  .logo
+    &-down
+      width: 104px
+      min-height: 120px
+      grid-row: 1/2
+      grid-column: span 1
+  .modal
+    &__dialog
+      width: 100%
 @media (max-width: 768px)
   .container
     max-width: 88%
@@ -274,6 +278,9 @@
     &__down
       &-ul
         grid-column: 1/10
+  .modal
+    &__dialog
+      padding: 20px 46px
 
 @media (max-width: 580px)
   .container
@@ -391,8 +398,8 @@
     &__title
       &--mb
         &-3
-          padding-top: 31px
-          margin-bottom: 15px
+          padding-top: 11px
+          margin-bottom: 10px
     &__contact
       &-datails
         grid-row: 6
@@ -432,3 +439,10 @@
             margin-bottom: 39px
             &--user
               margin-bottom: 27px
+  .logo
+    &-down
+      grid-row: 1
+      grid-column: 1
+  .modal
+    &__dialog
+      max-width: 300px
