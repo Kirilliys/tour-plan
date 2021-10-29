@@ -1786,4 +1786,8 @@ template {
   .modal__dialog {
     max-width: 300px;
   }
+  .modal__dialog--visible {
+    overflow-y: auto;
+    height: 95vh;
+  }
 }/*# sourceMappingURL=style.css.map */
