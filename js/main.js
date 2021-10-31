@@ -70,7 +70,31 @@ $(this).keydown(function(eventObject){
   })
 
 //Обработка формы
- $(".modal__form").validate();
+ $(".form").each(function(){
+   $(this).validate({
+   errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Please enter a name",
+      minlenght: "The name should not be shorter than 2 letters"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+     phone: {
+       required: "Phone is required",
+     },
+  },
+ });
+ });
 
+$(".navbar__subscribe").validate({
+    errorClass: ".error",
+    email: {
+       required: "Enter еmail",
+    },
+  });
 
 });
+

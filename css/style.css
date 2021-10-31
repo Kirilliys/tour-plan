@@ -52,6 +52,15 @@ img {
   background-color: #ec1f46;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #ec1f46;
+}
+
+.navbar__subscribe--error {
+  overflow: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1146,6 +1155,9 @@ template {
   line-height: 15px;
 }
 .footer__input {
+  width: 100%;
+}
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1329,7 +1341,7 @@ template {
     grid-gap: 38px;
     grid-row-gap: 49px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 48%;
   }
   .footer__title {
@@ -1563,7 +1575,7 @@ template {
     grid-row: 3/4;
     grid-column: 1/2;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
   .footer__form {
