@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan</title>
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -18,19 +20,19 @@
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-duration="200">
           <img src="img/gorizontal-logo.svg" alt="Best Tour Plan" class="logo__image" />
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-          <input type="text" class="search__input" placeholder="Search Location">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-duration="400" >
+          <input type="text" class="search__input" placeholder="Search Location" >
 
-          <button class="search__button">
+          <button class="search__button" >
             <img src="img/search.svg" alt="icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-duration="600">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -51,7 +53,7 @@
     <div class="navbar-bottom">
       <div class="container">
         <nav class="navbar-menu">
-          <ul class="navbar-menu__list">
+          <ul class="navbar-menu__list" data-aos="fade-up">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible
             navbar-menu__item--mobile--visible--user">
               <a href="#" class="user navbar__user navbar__user--mobile--visible">
@@ -141,18 +143,18 @@
       </div>
       <!-- /.hotel-info-->
       <div class="hotel-grid">
-          <div class="swiper hotel-slider hotel__slider">
+          <div class="swiper hotel-slider hotel__slider" data-aos="fade-right" data-aos-duration="300">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/Slade.jpg" alt="">
+                <img class="swiper-slide__image" src="img/Slade.jpg" alt="#">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="swiper-slide__image" src="img/Slade.jpg" alt="">
+                <img class="swiper-slide__image" src="img/Slade.jpg" alt="#">
               </div>
               <div class="swiper-slide hotel-slider__item">
-               <img class="swiper-slide__image" src="img/Slade.jpg" alt="">
+               <img class="swiper-slide__image" src="img/Slade.jpg" alt="#">
               </div>
             </div>
             
@@ -165,7 +167,7 @@
           <!--/.swiper-->
         
          <div class="hotel-right">
-           <div class="booking">
+           <div class="booking" data-aos="fade-left" data-aos-duration="500">
              <div class="booking__info">
                <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -186,7 +188,7 @@
                <!-- /.booking-room -->
              </div>
             <!-- /.booking__info -->
-            <div class="booking__call-center">
+            <div class="booking__call-center" data-aos="fade-left" data-aos-duration="500">
               <span class="booking__heading">Quick Booking</span>
               <a href="tel:12100" class="booking__number">
                 <img src="img/phone-call.svg" alt="Icon: phone">
@@ -198,7 +200,7 @@
             <!-- /.booking__button -->
            </div>
            <!-- /.booking -->
-           <div class="map">
+           <div class="map" data-aos="fade-left" data-aos-duration="500">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17606.64500719656!2d14.480862540081139!3d40.721554302262966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bbcdadd654831%3A0xa2884e62807f1802!2sHotel%20Costa!5e0!3m2!1sru!2sru!4v1633989109084!5m2!1sru!2sru"
               width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -212,7 +214,7 @@
     </div>
     <!-- /.container -->
     <div class="newsletter parallax-window" data-parallax= "scroll" data-image-src="img/newsletter-bg.jpg" data-speed="0.5">
-      <div class="newsletter-wrapper">
+      <div class="newsletter-wrapper" data-aos="flip-down">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
@@ -236,8 +238,8 @@
   <!-- /.hotel -->
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">What people think about&nbsp;us<h2>
-      <div class="swiper reviews-slider">
+      <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="300">What people think about&nbsp;us<h2>
+      <div class="swiper reviews-slider" data-aos="fade-up" data-aos-duration="400">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="reviews-slider__item">
@@ -344,14 +346,14 @@ Keanu Reeves" class="reviews-slider__avatar">
     <div class="container">
       <h2 class="activites__title">Other Activities</h2>
       <div class="activites-wrapper">
-        <div class="card activites__card activites__card--corner">
+        <div class="card activites__card activites__card--corner" data-aos="fade-up-right" data-aos-duration="300">
           <img src="img/activity-1.jpg" alt="The curious corner
           of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activites__card activites__card--gym ">
+        <div class="card activites__card activites__card--gym" data-aos="fade-up-right" data-aos-duration="500">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
@@ -359,7 +361,7 @@ Keanu Reeves" class="reviews-slider__avatar">
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activites__card activites__card--tamarind">
+        <div class="card activites__card activites__card--tamarind" data-aos="fade-up-right" data-aos-duration="700">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
@@ -367,7 +369,7 @@ Keanu Reeves" class="reviews-slider__avatar">
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activites__card activites__card--discovery">
+        <div class="card activites__card activites__card--discovery" data-aos="fade-up-right" data-aos-duration="900">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
@@ -384,7 +386,7 @@ Keanu Reeves" class="reviews-slider__avatar">
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper" data-aos="fade-down-right"  data-aos-duration="1000">
         <a href="#" class="logo-down">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
         </a>
@@ -487,7 +489,7 @@ Keanu Reeves" class="reviews-slider__avatar">
           </ul>
         </div>
         <!-- /.footer__contact-datails -->
-        <div class="footer__contact-form">
+        <div class="footer__contact-form" data-aos="zoom-in" data-aos-duration="800">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="post" class="footer__form form">
             <div class="footer__input-group">
@@ -527,7 +529,7 @@ Keanu Reeves" class="reviews-slider__avatar">
   <div class="modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
-    <div class="modal__dialog">
+    <div class="modal__dialog" >
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="icon:close">
       </a>
@@ -556,6 +558,7 @@ Keanu Reeves" class="reviews-slider__avatar">
   <script src="js/parallax.min.js"></script>
   <script src="js/mapbasics.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
