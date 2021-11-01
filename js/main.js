@@ -72,7 +72,7 @@ $(this).keydown(function(eventObject){
 //Обработка формы
  $(".form").each(function(){
    $(this).validate({
-   errorClass: "invalid",
+   errorClass: "invalid animate__animated animate__shakeX",
    messages: {
     name: {
       required: "Please enter a name",
@@ -97,7 +97,10 @@ $(".navbar__subscribe").validate({
   });
 
  // Плагин Masked Input
-   $("input[type='tel']").mask("+7(999) 999-9999");
+   $("input[type='tel']").mask("+7 (999) 999-9999");
  
+
+// Анимация 
+   AOS.init();
 });
 
