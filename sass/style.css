@@ -867,6 +867,7 @@ template {
   line-height: 18px;
 }
 .subscribe__button {
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 0;
