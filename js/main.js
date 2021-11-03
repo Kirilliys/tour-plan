@@ -76,28 +76,39 @@ $(this).keydown(function(eventObject){
    messages: {
     name: {
       required: "Please enter a name",
-      minlenght: "The name should not be shorter than 2 letters"
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "Your email address must be in the format of name@domain.com",
     },
      phone: {
-       required: "Phone is required",
+       required: 'Please enter your phone number',
+       minlength: 'Please enter at least 10 characters',
      },
   },
  });
  });
 
-$(".navbar__subscribe").validate({
-    errorClass: ".error",
-    email: {
-       required: "Enter еmail",
+ $(".subscribe").validate({
+   errorClass: "error",
+   messages: {
+    name: {
+      required: "Please enter a name",
     },
-  });
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+     phone: {
+       required: 'Please enter your phone number',
+       minlength: 'Please enter at least 10 characters'
+     },
+  },
+ });
+
 
  // Плагин Masked Input
-   $("input[type='tel']").mask("+7 (999) 999-9999");
+   $("input[type='tel']").mask("+7 (999) 999-99-99");
  
 
 // Анимация 
