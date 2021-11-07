@@ -71,6 +71,14 @@ img {
   color: #ec1f46;
 }
 
+.menu-button {
+  display: none;
+}
+
+a:hover {
+  transform: translateY(0) scale(1.1);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
